@@ -25,5 +25,9 @@ module.exports = {
       }
     ]
   },
-  plugins: [new VueLoaderPlugin()]
+  watch: true,
+  plugins: [new VueLoaderPlugin()],
+  watchOptions: {
+    ignored: /node_modules/
+  }
 }
